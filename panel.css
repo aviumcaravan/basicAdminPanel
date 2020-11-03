@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+body
+{
+	color: #f0f0f0;
+	background-color: #212121;
+	font-family: "Roboto";
+	font-size: 14px;
+}
+
+.banner
+{
+	font-family: "Raleway";
+	width: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom: 5px double #f0f0f0;
+	box-shadow: 3px 3px 5px #000000;
+	text-align: center;
+}
+
+.sectionName
+{
+	border-bottom: 1px solid #f0f0f0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.topBar
+{
+	width: 100%;
+}
+
+.artCount
+{
+	clear: left;
+	float: left;
+	color: #b2ffb2;
+	width: 50%;
+}
+
+.searchBar
+{
+	float: left;
+	width: 50%;
+}
+
+.searchBar > form
+{
+	margin: 0 auto;
+}
+
+.artList
+{
+	width: 720px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.status
+{
+	width: 150px;
+	height: 30px;
+}
+
+.title
+{
+	width: 150px;
+	height: 30px;
+}
+
+.slug
+{
+	width: 150px;
+	height: 30px;
+}
+
+.content
+{
+	width: 150px;
+	height: 30px;
+}
+
+.cat
+{
+	width: 150px;
+	height: 30px;
+}
+
+.tags
+{
+	width: 150px;
+	height: 30px;
+}
+
+.actions
+{
+	width: 250px;
+	height: 30px;
+}
