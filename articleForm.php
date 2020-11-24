@@ -3,6 +3,7 @@
 	<head>
 		<title>add an article</title>
 		<link rel = "stylesheet" href = "./articleForm.css">
+		<meta charset = "UTF-8">
 	</head>
 	<body>
 		<div class = "theForm">

@@ -25,7 +25,7 @@
 
 					$r = mysqli_query($con, "SELECT COUNT(id) AS number FROM `Articles`");
 					$cnt = (mysqli_fetch_assoc($r)["number"]);
-					echo "total entries: $cnt";
+					echo "total entries: ", $cnt;
 				?>
 			</h2>
 			<div class = "searchBar">
@@ -56,14 +56,14 @@
 				else
 					$v = mysqli_query($con, "SELECT * FROM `articles`");
 
-				while ($row = mysqli_fetch_assoc($v))
+				while ($_POST = mysqli_fetch_assoc($v))
 				{
-					$status = $row["status"];
-					$title = $row["title"];
-					$slug = $row["slug"];
-					$content = $row["content"];
-					$cat = $row["cat"];
-					$tags = $row["tags"];
+					$status = $_POST["status"];
+					$title = $_POST["title"];
+					$slug = $_POST["slug"];
+					$content = $_POST["content"];
+					$cat = $_POST["cat"];
+					$tags = $_POST["tags"];
 
 					if ($slug == 1)
 						$slug = "article of the day";
@@ -89,20 +89,20 @@
 							break;
 					}
 
-					echo '
-					<tr>
-						<td>', $status,'</td>
-						<td>', $title,'</td>
-						<td>', $slug,'</td>
-						<td>', $content,'</td>
-						<td>', $cat,'</td>
-						<td>', $tags,'</td>
+					echo
+					"<tr>
+						<td>", $status,"</td>
+						<td>", $title,"</td>
+						<td>", $slug,"</td>
+						<td>", $content,"</td>
+						<td>", $cat,"</td>
+						<td>", $tags,"</td>
 						<td>
-							<button class = "edit"><img src="edit.svg" width = "16" height = "16"></img></button>
-							<button class = "prev"><img src="preview.svg" width = "16" height = "16"></img></button>
-							<button class = "del"><img src="delete.svg" width = "16" height = "16"></img></button>
+							<a href = "editArticle.php?id=", $id,""><button class = "edit"><img src="edit.svg" width = "16" height = "16"></img></button></a>
+							<a href = "prvArticle.php?id=", $id,""><button class = "prev"><img src="preview.svg" width = "16" height = "16"></img></button></a>
+							<a href = "delArticle.php?id=", $id,""><button class = "del"><img src="delete.svg" width = "16" height = "16"></img></button></a>
 						</td>
-					</tr>';
+					</tr>";
 				}
 
 				mysqli_close($con);
