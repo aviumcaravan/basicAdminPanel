@@ -98,9 +98,9 @@
 						<td>", $cat,"</td>
 						<td>", $tags,"</td>
 						<td>
-							<a href = "editArticle.php?id=", $id,""><button class = "edit"><img src="edit.svg" width = "16" height = "16"></img></button></a>
-							<a href = "prvArticle.php?id=", $id,""><button class = "prev"><img src="preview.svg" width = "16" height = "16"></img></button></a>
-							<a href = "delArticle.php?id=", $id,""><button class = "del"><img src="delete.svg" width = "16" height = "16"></img></button></a>
+							<a href = 'editArticle.php?id=", $id,"'><button class = 'edit'><img src='edit.svg' width = '16' height = '16'></img></button></a>
+							<a href = 'prvArticle.php?id=", $id,"'><button class = 'prev'><img src='preview.svg' width = '16' height = '16'></img></button></a>
+							<a href = 'delArticle.php?id=", $id,"'><button class = 'del'><img src='delete.svg' width = '16' height = '16'></img></button></a>
 						</td>
 					</tr>";
 				}

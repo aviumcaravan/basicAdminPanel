@@ -57,7 +57,7 @@
                 }
 
                 echo
-                "<table class = "info">
+                "<table class = 'info'>
                     <tr><th>title</th><td>", $title,"</td></tr>
                     <tr><th>status</th><td>", $status,"</td></tr>
                     <tr><th>slug</th><td>", $slug,"</td></tr>

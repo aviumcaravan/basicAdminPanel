@@ -6,5 +6,5 @@
 	mysqli_close($con);
 
 	echo "article has been removed, redirecting back to the main page...";
-	header("Location: ./panel.php");
+	header("Location: panel.php");
 ?>
