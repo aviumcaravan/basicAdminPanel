@@ -1,5 +1,13 @@
 <!doctype html>
 
+<?php
+	session_start();
+	if (!(isset($_SESSION["signedIn"])))
+	{
+		header("Location: login.php");
+	}
+?>
+
 <html>
 	<head>
 		<title>article manager</title>
